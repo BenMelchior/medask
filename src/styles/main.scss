@@ -1,0 +1,152 @@
+@use '@unsass/breakpoint';
+
+@import 'scss/variables';
+@import '@fontsource-variable/open-sans';
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#app-container {
+	margin: 0 auto;
+	height: 100vh;
+	background-color: $lighten;
+	color: $primary;
+	font-family: 'Open Sans Variable', sans-serif;
+
+	@include breakpoint.up('md') {
+		.container {
+			max-width: 768px;
+		}
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	#app-header {
+		position: sticky;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: $header-height;
+		background-color: darken($lighten, 10%);
+		margin: 0 auto;
+		padding: {
+			left: 1.25rem;
+			right: 1.25rem;
+		}
+		margin-bottom: 0.5rem;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		> .container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.logo {
+				font-size: 1.2rem;
+				font-style: italic;
+				font-weight: 600;
+				color: $secondary;
+			}
+
+			nav {
+				ul {
+					list-style-type: none;
+					padding: 0;
+					margin: 0;
+					display: flex;
+
+					li {
+						margin-right: 0.75rem;
+						color: $primary;
+						transition: color 0.2s ease-in-out;
+
+						&:hover {
+							color: $secondary;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#app-content {
+		padding: 1rem;
+		overflow-y: auto;
+		height: calc(100vh - #{$header-height} - 1rem);
+		display: flex;
+		align-items: start;
+		justify-content: center;
+
+		> .container {
+		}
+	}
+
+	#app-footer {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		display: flex;
+		align-items: end;
+		flex-direction: row;
+		justify-content: center;
+		color: $primary;
+		padding: 0.5rem 1rem;
+
+		> .container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.links {
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					display: flex;
+
+					li {
+						margin-right: 0.5rem;
+						color: $primary;
+						transition: color 0.2s ease-in-out;
+
+						&:hover {
+							color: transparentize($color: $primary, $amount: 0.5);
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+a {
+	color: $primary;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+
+	&:hover {
+		color: $secondary;
+	}
+}
+
+.primary {
+	color: $primary;
+}
+
+.secondary {
+	color: $secondary;
+}
+
+.highlight {
+	color: $secondary;
+	font-weight: 600;
+}
