@@ -1,38 +1,19 @@
-# create-svelte
+# Welcome to MedAsk!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Hello and welcome! MedAsk is our handy web app designed especially for paramedics. It's your go-to resource for quick, reliable information on a wide range of medicines.
 
-## Creating a project
+## Cool Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Just Ask**: Need info on a medicine? Type it in, and ChatGPT will provide you with all the important details.
+- **Never Forget**: We keep a history of your searches, so you don't have to remember every detail.
+- **Smooth Sailing Interface**: Navigating our app is a breeze, with a focus on user-friendliness.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## License
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+We're in the process of sorting out the license details. More information coming soon!
 
-## Developing
+## Get in Touch
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Questions or feedback? Feel free to reach out:
+- Ben Melchior - ben@kn0x.tech
+- Check out the project: [MedAsk on GitHub](https://github.com/BenMelchior/medask)
